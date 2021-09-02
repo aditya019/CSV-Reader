@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Row</title>
+</head>
+<body>
+    <h1>Update Row</h1>
+    <form action="/update/<%=row._id%>?_method=PATCH" method="POST">
+    <label for="name">Name : </label>
+    <input type="text" name="name" id="name" value="<%=row.name%>"><br>
+    <label for="profession">Profession : </label>
+    <input type="text" name="profession" id="profession" value="<%=row.profession%>"><br>
+    <label for="city">City : </label>
+    <input type="text" name="city" id="city" value="<%=row.city%>">
+    <button type="submit">Update</button>
+    </form>
+</body>
+</html>

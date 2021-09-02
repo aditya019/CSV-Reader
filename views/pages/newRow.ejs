@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Row</title>
+</head>
+<body>
+    <h1>Add New Row</h1>
+    <form action="/newRow" method="POST">
+        <label for="name">Name : </label>
+        <input type="text" name="row[name]" id="name"><br>
+        <label for="profession">Profession : </label>
+        <input type="text" name="row[profession]" id="profession"><br>
+        <label for="city">City : </label>
+        <input type="text" name="row[city]" id="city">
+        <button type="submit">Add New Row</button>
+    </form>
+</body>
+</html>

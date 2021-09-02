@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Row Content</title>
+</head>
+<body>
+    <h1>Content of the Row</h1>
+    <h3>Name -> <%=row.name%> </h3>
+    <h3>Profession -> <%=row.profession%> </h3>
+    <h3>City -> <%=row.city%> </h3>
+    <form action="/deleteRow/<%=row._id%>?_method=DELETE" method="POST">
+        <button type="submit">Delete Row</button>
+    </form>
+    <a href="/update/<%=row._id%>">Update Row</a>
+    <a href="/csvContent">All Content of CSV file</a>
+</body>
+</html>
